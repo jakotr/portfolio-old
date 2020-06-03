@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portoflio - Jakub Otreba</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&subset=latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class = 'header'>
+        <div class="header__bg"></div>
+        <div class="header__menu-ham">
+            <i class="fas fa-bars show"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class = 'header__list'>
+            <li class = 'header__list-item'>
+                <a data-scroll="about" href="#">About me</a>
+            </li>
+            <li class = 'header__list-item'>
+                <a data-scroll="projects" href="#">Projects</a>
+            </li>
+            <li class = 'header__list-item'>
+                <a data-scroll="contact" href="#">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <section class='introduction'>
+        <div class="introduction__title">
+            <h1>Jakub Otręba</h1>
+            <p>Front-End Developer</p>
+        </div>
+        <div class="introduction__image">
+            <img src="img/intro.png" alt="">
+        </div>
+        
+    </section>
+    <section class = 'parting'>
+    </section>
+    <section class='about'>
+        <h1 class = 'about__title'>About me</h1>
+        <div class="about__info">
+            <div class="about__info-about">
+                <p>Hi, my name is Jakub Otręba. I have an engineering degree in computer science. My adventure with programming I started by learning C++ and C#. After that I tried my strength in web development, and decided that this is what I want to do. I have been programming in JavaScript for about two years. I'm fluent with frameworks like Phaser, JQuery and React. In the future I want to learn Node.js.</p>
+                <p>In my free time I like to play video games and doing sports.</p>
+            </div>
+            <div class="about__info-technologies">
+                <p>Tech stack:</p>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-react"></i>
+                <i class="fab fa-sass"></i>
+                <i class="fab fa-git-alt"></i>
+            </div>
+        </div>
+    </section>
+    <section class='projects'>
+        <h1>Projects</h1>
+        <div class="projects__wrapper">
+            <div class="projects__item">
+                <div class="projects__item-number">
+                    <span>1</span>
+                    <p>Covid Tracker</p>
+                </div>
+                <div class="projects__item-content">
+                    <h3>Covid Tracker</h3>
+                    <p>Application that displays COVID-19 cases using the API</p>
+                    <div class="projects__item-content-links">
+                        <a href="#">CODE</a>
+                        <a href="#">DEMO</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="projects__item">
+                <div class="projects__item-number">
+                    <span>2</span>
+                    <p>Sheep Jump</p>
+                </div>
+                <div class="projects__item-content">
+                    <h3>Sheep Jump</h3>
+                    <p>A simple project of a known game, of the same type as 'Flappy Bird'</p>
+                    <div class="projects__item-content-links">
+                        <a href="#">CODE</a>
+                        <a href="#">DEMO</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="projects__item">
+                <div class="projects__item-number">
+                    <span>3</span>
+                    <p>Recipe App</p>
+                </div>
+                <div class="projects__item-content">
+                    <h3>Recipe App</h3>
+                    <p>Application to search for new kitchen recipes</p>
+                    <div class="projects__item-content-links">
+                        <a href="#">CODE</a>
+                        <a href="#">DEMO</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <section class='contact'>
+        <h1 class = 'contact__title'>Contact me</h1>
+        <div class="contact__info">
+            <form class = 'contact__info-form' action="https://formspree.io/xzbjrrlp"method="post">
+                <div class="contact__info-inputBox">
+                    <input type="text" required = 'required' name='name'>
+                    <span>Full Name</span>
+                </div>
+                <div class="contact__info-inputBox">
+                    <input type="email" required = 'required' name='_replyto'>
+                    <span>Email Address</span>
+                </div>
+                <div class="contact__info-inputBox">
+                    <textarea class="contact__info-inputBox__message" required = 'required' name="message"></textarea>
+                    <span>Message</span>
+                </div>
+                <div class="contact__info-inputBox">
+                    <button type="submit">Send</button>
+
+                </div>
+            </form>
+            <div class="contact__info-socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        
+    </section>
+    <footer class='footer'>&copy; Copyright 2020, Jakub Otręba</footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
