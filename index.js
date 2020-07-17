@@ -8,8 +8,10 @@ $('a').on('click', function(event) {
         $('body, html').animate({
             scrollTop: $(`.${$(event.target).data('scroll')}`).offset().top - 100
         }, 1000);
-        $('.header__list__ham').toggleClass('come');
-        $('i').toggleClass('show');
+        if(window.innerWidth < 550) {
+            $('.header__list__ham').toggleClass('come');
+            $('i').toggleClass('show');
+        }
     }
 });
 
